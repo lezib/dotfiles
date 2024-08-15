@@ -70,7 +70,7 @@ ZSH_THEME="lezib"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting you-should-use)
+plugins=(sudo zsh-autosuggestions zsh-syntax-highlighting you-should-use)
 bindkey '^@' autosuggest-accept
 bindkey '^E' autosuggest-execute
 source $ZSH/oh-my-zsh.sh
@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 alias vim=nvim
-alias n=nvim
+alias cz=/home/maurin/.config/python/global/bin/cz
 alias c="clear"
 alias la="ls -a"
 alias ll="ls -al"

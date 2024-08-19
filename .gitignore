@@ -1,4 +1,3 @@
-.gitignore
 # root ignore
 Desktop*
 Documents*
@@ -25,6 +24,8 @@ go*
 .mozilla*
 .npm*
 .pki*
+.pre-commit-config.yaml
+.Preview*
 .profile
 .pulse-cookie
 .rustup*
@@ -54,6 +55,7 @@ dconf
 .config/ibus*
 .config/keepassxc*
 .config/nautilus*
+.config/neofetch*
 .config/obsidian*
 .config/procps*
 .config/pulse*
@@ -65,3 +67,4 @@ dconf
 .config/yay*
 .config/go*
 .config/python*
+.config/zed*

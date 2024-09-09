@@ -21,6 +21,7 @@ go*
 .gnupg*
 .histfile
 .local*
+.minecraft/
 .mozilla*
 .npm*
 .pki*
@@ -31,6 +32,7 @@ go*
 .rustup*
 .ssh*
 .steam*
+.tmux*
 .vim*
 .zcompdump*
 .zshenv

@@ -78,4 +78,3 @@ map("n", "G", "Gzz",                 { desc = "Go full down"})
 map("n", "<C-h>", vim.lsp.buf.hover, { desc = "analyse under cursor"})
 -- =a{ indentation entre les {}
 map("i", "<C-BS>", "<C-w>", { desc = "delete whole word"}) -- use ctrl-Backspace to delete the whole word in insert mode
-

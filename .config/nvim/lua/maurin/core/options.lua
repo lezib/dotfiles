@@ -34,8 +34,7 @@ vim.opt.cursorline = true
 -- x offset
 vim.opt.scrolloff = 7
 
--- test
-vim.o.tabstop = 2 -- A TAB character looks like 4 spaces
-vim.o.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
-vim.o.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
-vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
+-- set tab to 4 colums
+vim.opt.tabstop = 4        -- Définit la largeur d'une tabulation à 4 colonnes
+vim.opt.shiftwidth = 4     -- Définit la largeur d'une indentation automatique à 4 colonnes
+vim.opt.expandtab = false  -- Utilise des caractères de tabulation plutôt que des espaces

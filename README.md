@@ -3,6 +3,13 @@ Hello and welcome to my dotfiles !
 
 It's my first setup on linux, there might be some features that don't work properly but I will try my best to keep this repo updated.
 
+## TODO
+- fix hyprswitch
+- add a update counter
+- configure the microphone
+- configure the digital thing
+- configure the speakers but better if possible
+
 ### Basic infos :
 - OS : [ ArchLinux ](https://archlinux.org/)
 - WM : [ Hyprland ](https://hyprland.org/)

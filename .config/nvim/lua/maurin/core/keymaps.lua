@@ -78,7 +78,7 @@ map("n", "<leader>k", "zz",				{ desc = "Center view" })
 map("n", "G", "Gzz",					{ desc = "Go full down"})
 map("n", "<C-h>", vim.lsp.buf.hover,	{ desc = "analyse under cursor"})
 -- =a{ indentation entre les {}
-map("i", "<C-BS>", "dbx",				{ desc = "delete whole word"}) -- use ctrl-Backspace to delete the whole word in insert mode
+map("i", "<C-BS>", "<Esc>dbxa",				{ desc = "delete whole word"}) -- use ctrl-Backspace to delete the whole word in insert mode
 
 -- remap folding
 map("n", "<leader>s", "",									{ desc = "Fold" })

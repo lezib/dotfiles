@@ -7,6 +7,7 @@ Videos*
 Public*
 Pictures*
 
+envthlr*
 ranger*
 projet*
 usb*
@@ -24,11 +25,13 @@ go*
 .minecraft/
 .mozilla*
 .npm*
+.ollama*
 .pki*
 .pre-commit-config.yaml
 .Preview*
 .profile
 .pulse-cookie
+.python*
 .rustup*
 .ssh*
 .steam*

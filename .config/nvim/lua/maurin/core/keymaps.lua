@@ -7,7 +7,7 @@ map("n", "<leader>x", "", { desc = "Trouble #TODO" })
 
 -- remap Window
 map("n", "<leader>a", "", { desc = "Windows"} )
-map("n", "<leader>at", ":vsplit<CR>:terminal<CR>a",	{ desc = "Terminal" })
+map("n", "<leader>at", ":terminal<CR>a",	{ desc = "Terminal" })
 map("n", "<leader>ao", ":only<CR>",					{ desc = "Only current" })
 map("n", "<leader>av", ":vsplit<CR>",				{ desc = "Vsplit" })
 map("n", "<leader>as", ":split<CR>",				{ desc = "Hsplit" })
@@ -40,6 +40,7 @@ end,
 	{desc = "Save & close the current window" })
 
 
+map("n", "<leader>u", "<cmd>lua require('undotree').toggle()<cr>", {desc = "Undotree"})
 map("n", "<leader>ah", "<C-w>h")
 map("n", "<leader>aj", "<C-w>j")
 map("n", "<leader>ak", "<C-w>k")
@@ -60,10 +61,10 @@ map("n", "<C-u>", "<C-u> zz")
 -- map("v", "<leader>d", '"+D')
 
 -- remap file Explorer
-map("n", "<leader>e", "",					{ desc = "File Explorer" })
-map("n", "<leader>ee", "<cmd>Ex<CR>",		{ desc = "Open" })
-map("n", "<leader>ew", "<cmd>bprev<CR>",	{ desc = "prev buffer" })
-map("n", "<leader>er", "<cmd>bnext<CR>",	{ desc = "next buffer" })
+map("n", "<leader>ee", "<cmd>Oil --float<CR>",{ desc = "Open" })
+map("n", "<leader>eh", "<cmd>bprev<CR>",	{ desc = "prev buffer" })
+map("n", "<leader>el", "<cmd>bnext<CR>",	{ desc = "next buffer" })
+map("n", "<leader>er", "<cmd>bdelete!<CR>",	{ desc = "next buffer" })
 
 -- remap déplacement de lignes
 map("n", "H", "J")

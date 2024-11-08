@@ -1,3 +1,4 @@
+-------------------------------------------------------------------------
 -- Unable nerd Font
 vim.g.have_nerd_font = true
 
@@ -9,7 +10,7 @@ vim.opt.relativenumber = true
 vim.opt.mouse = 'a'
 
 -- Don't show the mode
-vim.opt.showmode = true
+-- vim.opt.showmode = false
 
 -- Save undo history
 vim.opt.undofile = true
@@ -38,3 +39,6 @@ vim.opt.scrolloff = 7
 vim.opt.tabstop = 4        -- Définit la largeur d'une tabulation à 4 colonnes
 vim.opt.shiftwidth = 4     -- Définit la largeur d'une indentation automatique à 4 colonnes
 vim.opt.expandtab = false  -- Utilise des caractères de tabulation plutôt que des espaces
+
+-- set a line to prevent more than 80 colums
+vim.opt.colorcolumn = "80"

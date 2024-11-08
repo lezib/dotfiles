@@ -116,12 +116,12 @@
   "cpu": {
 	  "interval": 1,
 	  "format": "  {usage}%",
-	  "on-click": "hyprctl dispatch exec 'kitty -e btm'"
+	  "on-click": "hyprctl dispatch exec [float] 'kitty --class btop_instance -e btop'"
   },
   "memory": {
 	  "interval": 1,
 	  "format": "  {}%",
-	  "on-click": "hyprctl dispatch exec 'kitty -e btm'"
+	  "on-click": "hyprctl dispatch exec [float] 'kitty --class btop_instance -e btop'"
   },
   "temperature": {
 	  "interval": 1,

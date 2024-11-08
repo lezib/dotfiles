@@ -109,3 +109,44 @@ alias cz=/home/maurin/.config/python/global/bin/cz
 alias c="clear"
 alias la="ls -a"
 alias ll="ls -al"
+eval $(thefuck --alias)
+
+# export FZF_DEFAULT_COMMAND='fd . --hidden -L --exclude ".git" -t f'
+function _nvimfzf {
+	export FZF_DEFAULT_COMMAND='fd --no-ignore --hidden --exclude .git'
+	DIRECTORY_PRINT=$(echo -e "[DIRECTORY]\n")
+	EXA_OPTIONS="--icons -la --color=always"
+	BAT_OPTIONS="--number -f"
+
+	NVIM_FZF_PREVIEW="if [[ -d {} ]]; then echo -e \"[DIRECTORY]\n\"; exa $EXA_OPTIONS {}; else bat $BAT_OPTIONS {}; fi"
+
+	dest_file=$(fzf --scheme=path --preview "$NVIM_FZF_PREVIEW")
+
+	if [[ ! -z "$dest_file" ]]; then
+		cd "$dest_file" && nvim .
+	fi
+}
+
+bindkey -s ^f "_nvimfzf\n"
+
+function _cdfzf {
+	export FZF_DEFAULT_COMMAND='fd --no-ignore --type d --hidden --exclude .git'
+	DIRECTORY_PRINT=$(echo -e "[DIRECTORY]\n")
+	EXA_OPTIONS="--icons -la --color=always"
+	BAT_OPTIONS="--number -f"
+
+	NVIM_FZF_PREVIEW="if [[ -d {} ]]; then echo -e \"[DIRECTORY]\n\"; exa $EXA_OPTIONS {}; else bat $BAT_OPTIONS {}; fi"
+
+	dest_file=$(fzf --scheme=path --preview "$NVIM_FZF_PREVIEW")
+
+	if [[ ! -z "$dest_file" ]]; then
+		cd "$dest_file"
+	fi
+}
+
+bindkey -s ^g "_cdfzf\n"
+
+
+function watcher {
+	find . -type f | entr -s "clear && $@"
+}

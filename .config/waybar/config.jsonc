@@ -18,16 +18,17 @@
 	],
 	"modules-center": [
 		"hyprland/workspaces"
-  ],
-  "modules-right": [
+	],
+	"modules-right": [
 	//"tray",
 	"network",
+	"custom/updates",
 	"custom/notification",
 	//"custom/language",
 	"battery",
 	"clock",
 	"custom/power"
-  ],
+	],
 
   //////////////
   /// Groups ///
@@ -95,7 +96,7 @@
 	  "format-wifi": "󰤨",
 	  "format-disconnected": "󰤭",
 	  "tooltip-format": "Connected to {essid}",
-	  "on-click": "hyprctl dispatch exec '[float]' 'kitty -e nmtui'"
+	  "on-click": "hyprctl dispatch exec [float] 'kitty -e nmtui'"
   },
   "power-profiles-daemon": {
 	  "format": "{icon}",
@@ -116,12 +117,12 @@
   "cpu": {
 	  "interval": 1,
 	  "format": "  {usage}%",
-	  "on-click": "hyprctl dispatch exec [float] 'kitty --class btop_instance -e btop'"
+	  "on-click": "hyprctl dispatch exec [float] 'kitty --class floating-main -e btop'"
   },
   "memory": {
 	  "interval": 1,
 	  "format": "  {}%",
-	  "on-click": "hyprctl dispatch exec [float] 'kitty --class btop_instance -e btop'"
+	  "on-click": "hyprctl dispatch exec [float] 'kitty --class floating-main -e btop'"
   },
   "temperature": {
 	  "interval": 1,
@@ -152,10 +153,10 @@
 	  "spacing": 10
   },
   "clock": {
-	"timezone": "Europe/Paris",
-	"tooltip" : true,
-	"tooltip-format": "<big><tt>{calendar}</tt></big>",
-	"format": "<b>{:%d-%m-%Y | %H:%M}</b>"
+	  "timezone": "Europe/Paris",
+	  "tooltip" : true,
+	  "tooltip-format": "<big><tt>{calendar}</tt></big>",
+	  "format": "<b>{:%d-%m-%Y | %H:%M}</b>"
   },
   "backlight": {
 	  "device": "intel_backlight",
@@ -223,5 +224,14 @@
 	  "on-scroll-up": "pamixer --default-source -i 5",
 	  "on-scroll-down": "pamixer --default-source -d 5",
 	  "scroll-step": 5
+  },
+  "custom/updates": {
+	  "format": "   {}",
+	  "escape": true,
+	  "return-type": "json",       
+	  "exec": "~/.config/scripts/updatePacman.sh",
+	  "restart-interval": 60,
+	  "on-click": "hyprctl dispatch exec [float] 'kitty --class floating-main -e '~/.config/scripts/installupdates.sh''"
+	  //"on-click-right": "~/dotfiles/.settings/software.sh"
   }
 }

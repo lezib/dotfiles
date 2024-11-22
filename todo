@@ -1,35 +1,40 @@
 
 ======= A faire sur le linux :0
 
-#wallpaper
-waybar
+# wallpaper
+# waybar
 # waylock
 # rofi
 # file manager
 # gestion des fenetres lorsqu'il y en a plusieurs
-notification center : sway-notification center
+# notification center : sway-notification center
+bluetooth
+bluetooth integration in waybar
+script notif when a script/command edit the clipboard 
 
-hyprswitch
+# hyprswitch
 reorganiser la conf hyprland
 
 ======= nvim
 
 # raccourcis
-alpha-nvim
+# alpha-nvim
 # truc pour les couleurs
 # remettre mes keymap:
 # plugins
-#file getter
+# file getter
+nvimdap
+gitsigns
 
 ======= zsh
 
-#changer la police d'ecriture
+# changer la police d'ecriture
 mettre une petite image lors du lancement
-plugins
+# plugins
 
 =======
 protondb pour rendre des jeux disponible sur linux
 
-keepassxc
-ssh connexion epita
+# keepassxc
+# ssh connexion epita
 

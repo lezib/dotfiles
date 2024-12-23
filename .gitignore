@@ -4,8 +4,10 @@ Documents*
 Download*
 Music*
 Videos*
+VirtualBoxVMS*
 Public*
 Pictures*
+Game*
 
 envthlr*
 ranger*
@@ -37,6 +39,7 @@ go*
 .steam*
 .tmux*
 .vim*
+.vmware*
 .zcompdump*
 .zshenv
 .zsh_history
@@ -62,6 +65,8 @@ dconf
 .config/htop*
 .config/ibus*
 .config/keepassxc*
+.config/mimeapps.list
+.config/nvim_minimal*
 .config/nautilus*
 .config/neofetch*
 .config/obsidian*
@@ -72,6 +77,7 @@ dconf
 .config/StardewValley*
 .config/systemd*
 .config/trizen*
+.config/VirtualBox*
 .config/wal*
 .config/yay*
 .config/go*

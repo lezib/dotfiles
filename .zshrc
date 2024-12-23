@@ -4,12 +4,13 @@
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="/usr/bin/nvim"
 
+VBOX_USB=usbfs
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="lezib"
-fastfetch --logo "~/Downloads/Pixelduck-1.png" --logo-width 40 --logo-height 20 
+~/.config/scripts/chooseDuck.sh
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -109,6 +110,7 @@ alias cz=/home/maurin/.config/python/global/bin/cz
 alias c="clear"
 alias la="ls -a"
 alias ll="ls -al"
+alias vimm='NVIM_APPNAME=nvim_minimal nvim'
 eval $(thefuck --alias)
 
 # export FZF_DEFAULT_COMMAND='fd . --hidden -L --exclude ".git" -t f'
